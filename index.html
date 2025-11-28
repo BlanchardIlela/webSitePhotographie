@@ -52,7 +52,7 @@
 
         <ul 
         class="fixed top-0 left-0 h-screen w-screen bg-golden flex flex-col gap-5 justify-center
-        items-center nav scale-y-100 transition-transform duration-300 ease-in-out origin-bottom
+        items-center nav scale-y-0 transition-transform duration-300 ease-in-out origin-bottom
         sm:static sm:scale-y-100 sm:flex-row sm:h-auto sm:w-auto sm:bg-transparent z-50">
           <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue
           after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before 
@@ -136,10 +136,11 @@
           </li>
         </ul>
 
-        <div class="sm:hidden">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="hamburger w-8 fixed top-5 right-4 flex flex-col gap-y-1.5
+        justify-center items-center cursor-pointer z-50 sm:hidden">
+          <div class="h-[2px] w-full bg-white rounded transition-transform"></div>
+          <div class="h-[2px] w-full bg-white rounded transition-opacity"></div>
+          <div class="h-[2px] w-full bg-white rounded transition-transform"></div>
         </div>
       </nav>
 
@@ -153,5 +154,7 @@
         </p>
       </section>
     </header>
+
+    <script src="app.js"></script>
   </body>
 </html>
